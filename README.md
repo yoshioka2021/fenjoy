@@ -1,24 +1,24 @@
-# README
+## 🤺Fenjoy
+# フェンシングプレイヤーみんなのためのアプリケーション
+## 🗣概要
+# マイナーで不便な部分のあるフェンシングをより快適にするアプリケーションです。
+フェンシングのプレイヤーに直接質問し、不便だと挙げられた試合の表について
+簡単に見れるように改良したアプリケーションです。試合形式の練習でぜひ活用して欲しいです。
+## 🔗URL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 👩‍💻利用方法
+## 課題解決
+|  課題                                |  課題解決                                   |
+| ----------------------------------- | ------------------------------------------ |
+| フェンシングの試合の記録用紙が見づらい!   | 人数と名前を入力するだけで対戦の順番が可視化できる! |
 
-Things you may want to cover:
+## 要件
+## 機能一覧
+試合順番表示機能
 
-* Ruby version
+## DB設計
 
-* System dependencies
+### Association
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## ローカルでの動作方法

@@ -1,0 +1,46 @@
+順番表示ページ
+<% if @player.number == 3 %>
+  <%= "1#{@player.name1} vs #{@player.name2}"%>
+  <%= "#{@player.name2} vs #{@player.name3}"%>
+  <%= "#{@player.name1} vs #{@player.name3}"%>
+<% end %>
+
+<% if @player.number == 4 %>
+  <%= "#{@player.name1} vs #{@player.name4}"%>
+  <%= "#{@player.name2} vs #{@player.name3}"%>
+  <%= "#{@player.name1} vs #{@player.name3}"%>
+  <%= "#{@player.name2} vs #{@player.name4}"%>
+  <%= "#{@player.name1} vs #{@player.name2}"%>
+  <%= "#{@player.name3} vs #{@player.name4}"%>
+<% end %>
+
+<% if @player.number == 5 %>
+  <%= "#{@player.name1} vs #{@player.name2}"%>
+  <%= "#{@player.name3} vs #{@player.name4}"%>
+  <%= "#{@player.name5} vs #{@player.name1}"%>
+  <%= "#{@player.name2} vs #{@player.name3}"%>
+  <%= "#{@player.name5} vs #{@player.name4}"%>
+  <%= "#{@player.name1} vs #{@player.name3}"%>
+  <%= "#{@player.name2} vs #{@player.name5}"%>
+  <%= "#{@player.name4} vs #{@player.name1}"%>
+  <%= "#{@player.name3} vs #{@player.name5}"%>
+  <%= "#{@player.name4} vs #{@player.name2}"%>
+<% end %>
+
+<% if @player.number == 6 %>
+  <%= "#{@player.name1} vs #{@player.name2}"%>
+  <%= "#{@player.name4} vs #{@player.name3}"%>
+  <%= "#{@player.name6} vs #{@player.name5}"%>
+  <%= "#{@player.name3} vs #{@player.name1}"%>
+  <%= "#{@player.name2} vs #{@player.name6}"%>
+  <%= "#{@player.name5} vs #{@player.name4}"%>
+  <%= "#{@player.name1} vs #{@player.name6}"%>
+  <%= "#{@player.name3} vs #{@player.name5}"%>
+  <%= "#{@player.name4} vs #{@player.name2}"%>
+  <%= "#{@player.name5} vs #{@player.name1}"%>
+  <%= "#{@player.name6} vs #{@player.name4}"%>
+  <%= "#{@player.name2} vs #{@player.name3}"%>
+  <%= "#{@player.name1} vs #{@player.name4}"%>
+  <%= "#{@player.name5} vs #{@player.name2}"%>
+  <%= "#{@player.name3} vs #{@player.name6}"%>
+<% end %>

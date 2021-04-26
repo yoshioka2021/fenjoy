@@ -14,7 +14,7 @@
 | 記録用紙が管理しづらい                  |　アプリケーションにすることによって、出先でも使用可能かつ保存できることによって、スマホでの管理ができる｜
 ## 要件
 ## 機能一覧
-試合順番表示機能←大変!!
+試合順番表示機能
 試合表記述機能
 試合表保存機能
 (画像のメモ機能??)
@@ -22,8 +22,23 @@
 
 スマホでも使用できる
 ## DB設計
+## table
+
+| Column | Type    | Options     |
+|--------|---------|-------------|
+| number | integer | null: false |
+| name1  | string  | null: false |
+| name2  | string  | null: false |
+| name3  | string  | null: false |
+| name4  | string  |             |
+| name5  | string  |             |
+| name6  | string  |             |
+
 
 ### Association
+
+
+
 
 
 ## ローカルでの動作方法

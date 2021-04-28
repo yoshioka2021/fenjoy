@@ -1,10 +1,12 @@
-<%= form_with(model: @player, local: true) do |f| %>
-    <%= f.text_field :number, placeholder: "number" %>
-    <%= f.text_field :name1, placeholder: "Name1" %>
-    <%= f.text_field :name2, placeholder: "Name2" %>
-    <%= f.text_field :name3, placeholder: "Name3" %>
-    <%= f.text_field :name4, placeholder: "Name4" %>
-    <%= f.text_field :name5, placeholder: "Name5" %>
-    <%= f.text_field :name6, placeholder: "Name6" %>
-    <%= f.submit "SEND" %>
-<% end %>
+<div class="form">
+    <%= form_with(model: @player, local: true) do |f| %>
+        <%= f.text_field :number, placeholder: "number" %>
+        <%= f.text_field :name1, placeholder: "Name1" %>
+        <%= f.text_field :name2, placeholder: "Name2" %>
+        <%= f.text_field :name3, placeholder: "Name3" %>
+        <%= f.text_field :name4, placeholder: "Name4" %>
+        <%= f.text_field :name5, placeholder: "Name5" %>
+        <%= f.text_field :name6, placeholder: "Name6" %>
+        <%= f.submit "SEND" %>
+    <% end %>
+</div>

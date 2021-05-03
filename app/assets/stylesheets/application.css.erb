@@ -56,8 +56,6 @@ section {
     }
 } %>
 
-
-
 table{
   border-collapse: collapse;
   width:auto;
@@ -81,9 +79,11 @@ th.empty,td.empty{
 input {
   border: none;
   outline: none;
-  width: 30vw;
-  height: 7vh;
+  width: 80px;
+  height: 80px;
 }
+
+
 
 body {
   margin: 0;
@@ -104,12 +104,9 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
-  font-family: 'Dancing Script', cursive;
-
+  font: 300 60px 'Oswald', sans-serif;
   letter-spacing: 6px;
   color: #fff;
-  font-size: 7rem;
-  color: #f5a500 ;
 }
 
 .contact-wrapper {
@@ -138,11 +135,14 @@ body {
   margin-top: 15px;
   height: 34px;
   width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
 }
 
 .button {
   width: 400px;
   height: 34px;
+  transition: all .2s ease-in-out;
 }
 
 .send-text {
@@ -152,8 +152,9 @@ body {
   letter-spacing: 2px;
 }
 
-
-
+.button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
 
 /* Begin Right Contact Page */
 .direct-contact-container {
@@ -302,7 +303,6 @@ hr {
   .form-control, textarea {
     max-width: 340px;
     margin: 0 auto;
-    margin:
   }
   
   .name, .email, textarea {

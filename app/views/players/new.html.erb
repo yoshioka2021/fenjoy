@@ -1,47 +1,110 @@
+<div class="form">
+    <%= form_with(model: @player, local: true) do |f| %>
+        <%= f.text_field :number, placeholder: "number" %>
+        <%= f.text_field :name1, placeholder: "Name1" %>
+        <%= f.text_field :name2, placeholder: "Name2" %>
+        <%= f.text_field :name3, placeholder: "Name3" %>
+        <%= f.text_field :name4, placeholder: "Name4" %>
+        <%= f.text_field :name5, placeholder: "Name5" %>
+        <%= f.text_field :name6, placeholder: "Name6" %>
+        <%= f.submit "SEND" %>
+    <% end %>
+</div>
+
 <section id="contact">
   
-  <h1 class="section-header">Form</h1>
+  <h1 class="section-header">CONTACT</h1>
   
   <div class="contact-wrapper">
     
-    <div class="form-horizontal">
-      <%= form_with(model: @player, local: true) do |f| %>
-        
-        <div class="form-control">
-          <%= f.text_field :number, placeholder: "number" %>
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+        <div class="form-group">
+        <div class="col-sm-12">
+            <input type="string" class="form-control" id="name" placeholder="NAME1" name="name" value="" required>
+        </div>
         </div>
 
+        <div class="form-group">
+        <div class="col-sm-12">
+            <input type="string" class="form-control" id="name" placeholder="NAME1" name="name" value="" required>
+        </div>
+        </div>
+
+
+        <div class="form-group">
+        <div class="col-sm-12">
+            <input type="string" class="form-control" id="name" placeholder="NAME1" name="name" value="" required>
+        </div>
+        </div>
+
+        <div class="form-group">
+                <div class="col-sm-12">
+                <input type="string" class="form-control" id="name" placeholder="NAME1" name="name" value="" required>
+                </div>
+            </div>
+
+        <div class="form-group">
+                <div class="col-sm-12">
+                <input type="string" class="form-control" id="name" placeholder="NAME1" name="name" value="" required>
+                </div>
+            </div>
+
+        <div class="form-group">
+                <div class="col-sm-12">
+                <input type="string" class="form-control" id="name" placeholder="NAME1" name="name" value="" required>
+                </div>
+            </div>
+
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
       
-        <div class="form-control">
-          <%= f.text_field :name1, placeholder: "Name1" %>
-        </div>
-
-        <div class="form-control">
-          <%= f.text_field :name2, placeholder: "Name2" %>
-        </div>
-
-      
-        <div class="form-control">
-          <%= f.text_field :name3, placeholder: "Name3" %>
-        </div>
-
-
-        <div class="form-control">
-          <%= f.text_field :name4, placeholder: "Name4" %>
-        </div>
-        
-
-        <div class="form-control">
-          <%= f.text_field :name5, placeholder: "Name5" %>
-        </div>
-
-
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
         <div class="button">
-          <%= f.submit "SEND" %>
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
         </div>
-        
-      <% end %>
-    </div>
+      
+      </button>
+      
+    </form>
+    
+      <!---------------- 
+
+      CONTACT PAGE RIGHT 
+    
+      -----------------> 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
     
   </div>
   

@@ -125,6 +125,14 @@ body {
   max-width: 400px;
   font-family: 'Lato';
   font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 3.2rem;
 }
 
 .form-control, textarea {
@@ -132,6 +140,7 @@ body {
   background-color: #000;
   color: #fff;
   letter-spacing: 1px;
+  margin: 3px;
 }
 
 .send-button {
@@ -274,6 +283,7 @@ hr {
 /* Begin Media Queries*/
 @media screen and (max-width: 760px) {
   .direct-contact-container, .form-horizontal {
+    text-align: center;
     float: none;
     margin: 10px auto;
   }  

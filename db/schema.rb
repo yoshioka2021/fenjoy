@@ -10,18 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_26_042136) do
-
-  create_table "players", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "number", null: false
-    t.string "name1", null: false
-    t.string "name2", null: false
-    t.string "name3", null: false
-    t.string "name4"
-    t.string "name5"
-    t.string "name6"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+ActiveRecord::Schema.define(version: 20_210_426_042_136) do
+  create_table 'players', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8', force: :cascade do |t|
+    t.integer 'number', null: false
+    t.string 'name1', null: false
+    t.string 'name2', null: false
+    t.string 'name3', null: false
+    t.string 'name4'
+    t.string 'name5'
+    t.string 'name6'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
-
 end
